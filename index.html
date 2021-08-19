@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Erinna Widjaja</title>
@@ -9,8 +9,12 @@
     <meta name="author" content="Erinna Widjaja">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Bootstrap CSS-->
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <!--Load Dependecies-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js" crossorigin></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
@@ -18,180 +22,241 @@
 </head>
 
 <body>
-    <div class="content-container-cols">
-        <div class="content-container-rows">
-            <div class="content-large" id="resume">
-                <span class="text header">Erinna Widjaja</span>
-                <span class="text"><b>Software Engineer</b><br>Seattle, WA</span>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="navbar-cols">
+            <span class="nav-header fw-bold lead"><b>Erinna Widjaja</b></span>
+            <div></div>
+            <span class="nav-link lead" id="home">Home</span>
+            <span class="nav-link lead" id="resume">Resume</span>
+            <span class="nav-link lead" id="portfolio">Portfolio</span>
+            <span class="nav-link lead" id="contact">Contact</span>
+        </div>
+    </nav>
 
-                <span class="text"><a href="https://www.linkedin.com/in/erinna-widjaja/" id="linkedin-link" target="_blank">https://www.linkedin.com/in/erinna-widjaja/</a><br>
-                                    <a href="https://github.com/erinnaw" id="github-link" target="_blank">https://github.com/erinnaw</a></span>
-
-                <span class="text subheader">Technologies / Skills</span>
-                <span class="text"><b>Languages</b> | Python | Javascript | JSON | C | C++ | Java | CSS</span>
-                <span class="text"><b>Frameworks & Libraries</b> | Ajax | jQuery | JSON | Flask | Bootstrap | Jinja | OpenGL</span>
-                <span class="text"><b>Database & Industry Tools</b> | PostgreSQL | Git | Github | Command Line</span>
-                <span class="text"><b>Tools / Software</b> | LTspice | Logisim | Quartus Prime | MATLAB | Arduino | DE1_SoC FPGA</span>
-
-                <span class="text subheader">Education & Training</span>
-                <span class="text subheader-cols">
-                    <span><b>Hackbright Academy</b>, San Francisco, CA</span>
-                    <span></span>
-                    <span><b>July, 2021</b></span>
-                </span>
-                <span class="text"><i>Software Engineering Fellowship</i>, Accelerated, 12 weeks, software engineering program</span>
-
-                <span class="text subheader-cols">
-                    <span><b>University of Washington Bothell</b>, Bothell, WA</span>
-                    <span></span>
-                    <span><b>Dec, 2020</b></span>
-                </span>
-                <span class="text"><i>Bachelor of Science</i>, Electrical Engineering - Minor in Mathematics</span>
-
-                <span class="text subheader-cols">
-                    <span><b>Bellevue College</b>, Bellevue, WA</span>
-                    <span></span>
-                    <span><b>Aug, 2018</b></span>
-                </span>
-                <span class="text"><i>Associates</i>, Electrical and Computer Engineering</span>
+    <div class="content-container-rows">
+        <div class="content-header">
+            <div class="header-cols">
+                <h1 class="display-4 lead">Erinna Widjaja</h1>
+                <div></div>
+                <h3><small class="text-muted lead fs-3">Full Stack Developer</small></h3>
             </div>
+        </div>
 
-            <div class="content-large">
-                <span class="text header">Portfolio</span>
-                    <div class="portfolio-item" id="learnblackjack">
-                        <div class="portfolio-item-rows">
-                            <div class="portfolio-item-text-cols">
-                                <span class="text">Title</span>
-                                <span class="text"><b>Learn BlackJack</b></span>
-                            </div>
-
-                            <div class="portfolio-item-text-cols">
-                                <span class="text">Description</span>
-                                <span class="text">Learn how to play BlackJack with statistics and practice counting cards!</span>                          
-                            </div>
-
-                            <div class="portfolio-item-text-cols">
-                                <span class="text">URL</span>
-                                <span class="text"><a
-                                        href="https://learnblackjack.erinnawidjaja.com" id="learnblackjack-link" target="_blank">https://learnblackjack.erinnawidjaja.com</a></span>
-                            </div>
-
-                            <div class="portfolio-item-text-cols">
-                                <span class="text">Github</span>
-                                <span class="text"><a href="https://github.com/erinnaw/learnblackjack" id="learnblackjack-github" target="_blank">https://github.com/erinnaw/learnblackjack</a></span>                           
-                            </div>
-
-                            <div class="portfolio-item-text-cols">
-                                <span class="text">Tech Stack</span>
-                                <span class="text">Javascript, jQuery, CSS</span>                           
-                            </div>
-                        </div>
-                        
-                        <div class="portfolio-arrow" id="learnblackjack-arrow">&#187;</div>
-                    </div>
-
-                    <div class="portfolio-item" id="fingerprintjsdemo">
-                        <div class="portfolio-item-rows">
-                            <div class="portfolio-item-text-cols">
-                                <span class="text">Title</span>
-                                <span class="text"><b>FingerprintJS Demo</b></span>
-                            </div>
-                        
-                            <div class="portfolio-item-text-cols">
-                                <span class="text">Description</span>
-                                <span class="text">Explore FingerprintJS Pro and its functionalities in this demo. See how well FingerprintJS Pro keeps track of you and
-                                                    how well it can identify you!</span>
-                            </div>
-                        
-                            <div class="portfolio-item-text-cols">
-                                <span class="text">URL</span>
-                                <span class="text"><a
-                                        href="https://fp.erinnawidjaja.com" id="fp-link" target="_blank">https://fp.erinnawidjaja.com</a></span>
-                            </div>
-
-                            <div class="portfolio-item-text-cols">
-                                <span class="text">Github</span>
-                                <span class="text"><a href="https://github.com/erinnaw/FingerprintJSdemo" id="fp-github" target="_blank">https://github.com/erinnaw/FingerprintJSdemo</a></span>
-                            </div>
-                        
-                            <div class="portfolio-item-text-cols">
-                                <span class="text">Tech Stack</span>
-                                <span class="text">Javascript, jQuery, CSS</span>
-                            </div>
-                        </div>                   
-                        
-                        <div class="portfolio-arrow" id="fp-arrow">&#187;</div>                    
-                    </div>
-
-                    <div class="portfolio-item" id="gamesessionmaker">
-                        <div class="portfolio-item-rows">
-                            <div class="portfolio-item-text-cols">
-                                <span class="text">Title</span>
-                                <span class="text"><b>Game Session Maker</b></span>
-                            </div>
-                        
-                            <div class="portfolio-item-text-cols">
-                                <span class="text">Description</span>
-                                <span class="text">Game Session Maker lets you host and join gaming sessions, as well as provide forums for discussions. 
-                                                    Join a community of gamers who enjoy social gaming.</span>
-                            </div>
-                        
-                            <div class="portfolio-item-text-cols">
-                                <span class="text">URL</span>
-                                <span class="text"><a href="http://34.220.94.122/" id="gamesessionmaker-link" target="_blank">http://34.220.94.122/</a></span>
-                            </div>
-
-                            <div class="portfolio-item-text-cols">
-                                <span class="text">Github</span>
-                                <span class="text"><a href="https://github.com/erinnaw/Game-Session-Maker" id="gamesessionmaker-github" target="_blank">https://github.com/erinnaw/Game-Session-Maker</a></span>                           
-                            </div>
-                        
-                            <div class="portfolio-item-text-cols">
-                                <span class="text">Tech Stack</span>
-                                <span class="text">Python, Flask, SQLAlchemy, PostreSQL, Javascript, jQuery, Ajax, CSS, Bootstrap</span>
-                            </div>
-                        </div>
-                                              
-                        <div class="portfolio-arrow" id="gamesessionmaker-arrow">&#187;</div>                   
-                    </div>                
-            </div>
-        </div>  
-
-        <div class="content-container-rows">
-            <div class="content-aboutme">
-                <span class="text subheader">About Me</span>
-                <p>I've been programming for 10 years, mostly as a personal hobby. I started out with C and C++, and found my way into web development. 
-                    I enjoy creating web apps during my free time. I am currently looking for my first professional experience in software development.</p>
-            </div>
-        
-            <div class="content-links">
-                <span class="text subheader">Links</span>
-                <div class="content-cols">
-                    <img class="icon-img" id="linkedin" src="./static/image/linkedin.png">
-                    <!--<span>https://www.linkedin.com/in/erinna-widjaja/</span>-->
-
-                    <img class="icon-img round-border" id="github" src="./static/image/github.png">
-                    <!--<span>https://github.com/erinnaw</span>-->
+        <div class="content-container-cols">
+            <div class="content-skillset">
+                <div class="icon-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-geo-alt-fill icon-center"
+                        viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                    </svg>
+                    <span class="lead">Seattle, WA</span>
+                </div>
+                <h1 class="display-6">Skillset</h1>
+                <div class="content-container-rows">
+                    <span>Python | Javascript | JSON | C | C++ | Java | CSS</span>
+                    <span>Ajax | jQuery | JSON | Flask | Bootstrap | Jinja | OpenGL</span>
+                    <span>PostgreSQL | Git | Github | Command Line</span>
+                    <span>LTspice | Logisim | Quartus Prime | MATLAB | Arduino</span>
                 </div>
             </div>
 
-            <div class="content-contactme">
-                <span class="text subheader">Contact Me</span>
-                    <form name="contact-form" class="contact-form" id="contact-form">
-                            <label for="user_name">Name</label>
-                            <input type="text" name="user_name" id="user_name">
-
-                            <label for="user_email">Email</label>
-                            <input type="email" name="user_email" id="user_email">
-
-                            <label for="message">Message</label>
-                            <textarea rows="5" cols="30" name="message" id="message"></textarea>
-
-                            <input type="submit" class="submit" id="submit">
-                    </form>
+            <div class="content-profile">
+                <h1 class="display-6">Profile</h1>
+                <p class="lead">
+                    I've been programming for 10 years, mostly as a personal hobby. I started out with C and C++, and found my way into web
+                    development. I enjoy creating web apps during my free time. I am currently looking for my first professional experience
+                    in software development.
+                </p>
+                <h1 class="display-6">Social Profiles</h1>
+                <div class="social-icons">
+                    <img class="icon-img" id="linkedin" src="./static/image/linkedin.png">
+                    <!--<span>https://www.linkedin.com/in/erinna-widjaja/</span>-->
                     
-                    <span class="flash-msg" id="flash-msg">Field(s) cannot be empty.</span>
+                    <img class="icon-img round-border" id="github" src="./static/image/github.png">
+                    <!--<span>https://github.com/erinnaw</span>-->
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-envelope-fill icon-img" id="email"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                    </svg>
+                </div>
             </div>
+        </div>
+    </div>
+
+    <div class="content-container-rows bg-resume">
+        <div class="education-rows">
+            <h1 class="display-6 center">Education</h1>
+            <div class="education-cols">
+                <img class="icon-img icon-center" src="./static/image/graduate-icon.png">
+                <span class="lead text-align-bottom"><b>Hackbright Academy</b></span>
+                <div></div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-geo-alt-fill icon-center" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                </svg>
+                <span class="lead text-align-bottom">San Francisco, CA</span>
+            </div>
+            <div class="education-description">
+                <div></div>
+                <div class="lead fs-6"><i>Software Engineering Fellowship</i>, software engineering program</div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-calendar2-minus-fill icon-center"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zm9.954 3H2.545c-.3 0-.545.224-.545.5v1c0 .276.244.5.545.5h10.91c.3 0 .545-.224.545-.5v-1c0-.276-.244-.5-.546-.5zM6 10a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1H6z" />
+                </svg>
+                <span class="lead">July, 2021</span>
+            </div>
+    
+            <div class="education-cols">
+                <img class="icon-img icon-center" src="./static/image/graduate-icon.png">
+                <span class="lead text-align-bottom"><b>University of Washington Bothell</b></span>
+                <div></div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-geo-alt-fill icon-center" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                </svg>
+                <span class="lead text-align-bottom">Bothell, WA</span>
+            </div>
+            <div class="education-description">
+                <div></div>
+                <div class="lead fs-6"><i>Bachelor of Science, Electrical Engineering</i> - Minor in Mathematics</div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-calendar2-minus-fill icon-center" viewBox="0 0 16 16">
+                    <path
+                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zm9.954 3H2.545c-.3 0-.545.224-.545.5v1c0 .276.244.5.545.5h10.91c.3 0 .545-.224.545-.5v-1c0-.276-.244-.5-.546-.5zM6 10a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1H6z" />
+                </svg>                    
+                <span class="lead">December, 2020</span>
+            </div>
+
+            <div class="education-cols">
+                <img class="icon-img icon-center" src="./static/image/graduate-icon.png">
+                <span class="lead text-align-bottom"><b>Bellevue College</b></span>
+                <div></div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-geo-alt-fill icon-center" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                </svg>
+                <span class="lead text-align-bottom">Bellevue, WA</span>
+            </div>
+            <div class="education-description">
+                <div></div>
+                <div class="lead fs-6"><i>Associates</i> - Electrical and Computer Engineering</div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-calendar2-minus-fill icon-center" viewBox="0 0 16 16">
+                    <path
+                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zm9.954 3H2.545c-.3 0-.545.224-.545.5v1c0 .276.244.5.545.5h10.91c.3 0 .545-.224.545-.5v-1c0-.276-.244-.5-.546-.5zM6 10a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1H6z" />
+                </svg>
+                <span class="lead">August, 2018</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-container-rows">
+        <div class="portfolio-rows">
+            <h1 class="display-6 center">Portfolio</h1>
+            <div class="portfolio-item">
+                <img src="./static/image/learnblackjack-screenshot.JPG" class="screenshot-img">
+                <div class="portfolio-item-rows">
+                    <span class="lead fs-4"><b>Learn BlackJack</b></span>
+                    <span class="lead">Learn how to play BlackJack with statistics and practice counting cards!</span>
+                    <span class="lead fs-6"><i>Javascript, jQuery, CSS</i></span>
+                </div>
+                <div class="education-icons-rows">
+                    <a href="https://learnblackjack.erinnawidjaja.com" id="learnblackjack-link" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-link-45deg icon-center border"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
+                            <path
+                                d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/erinnaw/learnblackjack" id="learnblackjack-github" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-github icon-center border"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="portfolio-item">
+                <img src="./static/image/fp-screenshot.JPG" class="screenshot-img">
+                <div class="portfolio-item-rows">
+                    <span class="lead fs-4"><b>FingerprintJS Demo</b></span>
+                    <span class="lead">Explore FingerprintJS Pro and its functionalities in this demo. See how well FingerprintJS Pro
+                        keeps track of you and how well it can identify you!</span>
+                    <span class="lead fs-6"><i>Javascript, jQuery, CSS</i></span>
+                </div>
+                <div class="education-icons-rows">
+                    <a href="https://fp.erinnawidjaja.com" id="fp-link" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                            class="bi bi-link-45deg icon-center border" viewBox="0 0 16 16">
+                            <path
+                                d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
+                            <path
+                                d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/erinnaw/FingerprintJSdemo" id="fp-github" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                            class="bi bi-github icon-center border" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="./static/image/gsm-screenshot.JPG" class="screenshot-img">
+                <div class="portfolio-item-rows">
+                    <span class="lead fs-4"><b>Game Session Maker</b></span>
+                    <span class="lead">Game Session Maker lets you host and join gaming sessions, as well as provide forums for discussions. Join a community
+                                        of gamers who enjoy social gaming.</span>
+                    <span class="lead fs-6"><i>Python, Flask, SQLAlchemy, PostreSQL, Javascript, jQuery, Ajax, CSS, Bootstrap</i></span>
+                </div>
+                <div class="education-icons-rows">
+                    <a href="http://34.220.94.122/" id="gamesessionmaker-link" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                            class="bi bi-link-45deg icon-center border" viewBox="0 0 16 16">
+                            <path
+                                d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
+                            <path
+                                d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/erinnaw/Game-Session-Maker" id="gamesessionmaker-github" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                            class="bi bi-github icon-center border" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-container-rows bg-contactme">
+        <div class="content-contactme">
+            <h1 class="display-6 center">Contact me</h1>
+            <form name="contact-form" class="contact-form" id="contact-form">
+                <label for="user_name">Name</label>
+                <input type="text" name="user_name" id="user_name">
+        
+                <label for="user_email">Email</label>
+                <input type="email" name="user_email" id="user_email">
+        
+                <label for="message">Message</label>
+                <textarea rows="5" cols="30" name="message" id="message"></textarea>
+
+                <button type="submit" class="btn btn-outline-secondary submit" id="submit">Submit</button>
+            </form>
+            <span class="flash-msg lead" id="flash-msg">Field(s) cannot be empty.</span>
         </div>
     </div>
 

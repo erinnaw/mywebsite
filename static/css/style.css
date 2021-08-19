@@ -1,111 +1,144 @@
-.content-container-cols {
+.navbar-cols {
   display: grid;
-  grid-template-columns: auto auto;
-  border: 1px hidden black;
-  border-radius: 10px;
+  grid-template-columns: 20% 40% 10% 10% 10% 10%;
+  width: 1000px;
   margin: auto;
+}
+
+.nav-header {
+  margin: auto;
+  margin-left: 0;
+}
+
+.nav-link {
+  cursor: pointer;
 }
 
 .content-container-rows {
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto;
 }
 
-.content-cols {
+.content-container-cols {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 50% 50%;
+  width: 1000px;
+  margin: auto;
 }
 
-.content-large {
-  position: relative;
+.content-header {
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.header-cols {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 1000px;
+}
+
+.grid-cols {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.grid-rows {
   display: grid;
   grid-template-rows: auto;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 10px 10px 10px 10px;
-  margin: 5px 5px 5px 5px;
+}
+
+.content-skillset {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.content-profile {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.social-icons {
+  display: grid;
+  grid-template-columns: 15% 15% 15% 55%;
+}
+
+.icon-text {
+  display: grid;
+  grid-template-rows: 80% 20%;
+  margin-bottom: 50px;
+  text-align: center;
+  align-items: center;
+  width: 100px;
+}
+
+.icon-center {
+  margin-left: 25px;
+}
+
+.bg-resume {
+  background-color: rgb(249, 248, 255);
+  margin-top: 100px;
+}
+
+.education-rows {
+  display: grid;
+  grid-template-rows: auto;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 1000px;
+}
+
+.education-cols {
+  display: grid;
+  grid-template-columns: 8% 42% 27% 8% 15%;
+  padding-top: 50px;
+}
+
+.education-description {
+  display: grid;
+  grid-template-columns: 8% 69% 8% 15%;
+}
+
+.education-icons-rows {
+  display: grid;
+  grid-template-rows: auto;
+  height: 120px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.text-align-bottom {
+  padding-top: 10px;
+}
+
+.portfolio-rows {
+  display: grid;
+  grid-template-rows: auto;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 1000px;
+}
+
+.bg-contactme {
+  background-color: rgb(249, 248, 255);
+}
+
+.center {
+  text-align: center;
 }
 
 .content-contactme {
   position: relative;
   display: grid;
   grid-template-rows: auto;
-  border: 1px solid black;
-  border-radius: 10px;
   padding: 10px 10px 10px 10px;
-  margin: 5px 5px 5px 5px;
-  width: 300px;
-  height: 300px;
-}
-
-.content-aboutme {
-  position: relative;
-  display: grid;
-  grid-template-rows: auto;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 10px 10px 10px 10px;
-  margin: 5px 5px 5px 5px;
-  width: 300px;
-  height: 200px;
-}
-
-.content-links {
-  position: relative;
-  display: grid;
-  grid-template-rows: auto;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 10px 10px 10px 10px;
-  margin: 5px 5px 5px 5px;
-  width: 300px;
-  height: 100px;
-}
-
-.header {
-  font-size: 28px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: brown;
-}
-
-.subheader {
-  font-size: 24px;
-  color: brown;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.subheader-cols {
-  display: grid;
-  grid-template-columns: 50% 30% 20%;
-  background-color: cornsilk;
-}
-
-.text {
-  letter-spacing: 2px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.portfolio-item {
-  position: relative;
-  display: grid;
-  grid-template-columns: 80% 20%;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 10px 10px 10px 10px;
-  margin: 5px 5px 5px 5px;
-}
-
-.portfolio-item-rows {
-  display: grid;
-  grid-template-rows: auto auto auto auto;
-}
-
-.portfolio-item-text-cols {
-  display: grid;
-  grid-template-columns: 20% 80%;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 600px;
 }
 
 .contact-form {
@@ -119,6 +152,7 @@
   opacity: 0;
   transition: all 0.5s ease-in-out;
   margin: auto;
+  margin-top: 10px;
 }
 
 .visible {
@@ -128,6 +162,25 @@
 
 textarea {
   resize: none;
+}
+
+.portfolio-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 25% 65% 10%;
+  width: 1000px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.screenshot-img {
+  width: 200px;
+  height: 150px;
+}
+
+.portfolio-item-rows {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
 }
 
 a {
@@ -155,14 +208,6 @@ a {
 
 .icon-img-animation {
   border: 2px solid black;
-}
-
-.submit {
-  cursor: pointer;
-  width: 80px;
-  height: 30px;
-  border-radius: 5px;
-  margin: auto;
 }
 
 .portfolio-arrow {
