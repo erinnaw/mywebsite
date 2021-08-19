@@ -22,9 +22,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="navbar-cols">
-            <span class="nav-header fw-bold lead"><b>Erinna Widjaja</b></span>
+            <span class="nav-header lead"><b>Erinna Widjaja</b></span>
             <div></div>
             <span class="nav-link lead" id="home">Home</span>
             <span class="nav-link lead" id="resume">Resume</span>
@@ -35,7 +35,7 @@
 
     <div class="content-container-rows">
         <div class="content-header">
-            <div class="header-cols">
+            <div class="header-cols" id="content-profile">
                 <h1 class="display-4 lead">Erinna Widjaja</h1>
                 <div></div>
                 <h3><small class="text-muted lead fs-3">Full Stack Developer</small></h3>
@@ -85,7 +85,7 @@
         </div>
     </div>
 
-    <div class="content-container-rows bg-resume">
+    <div class="content-container-rows bg-resume" id="content-resume">
         <div class="education-rows">
             <h1 class="display-6 center">Education</h1>
             <div class="education-cols">
@@ -153,7 +153,7 @@
         </div>
     </div>
 
-    <div class="content-container-rows">
+    <div class="content-container-rows" id="content-portfolio">
         <div class="portfolio-rows">
             <h1 class="display-6 center">Portfolio</h1>
             <div class="portfolio-item">
@@ -242,7 +242,7 @@
     </div>
 
     <div class="content-container-rows bg-contactme">
-        <div class="content-contactme">
+        <div class="content-contactme" id="content-contactme">
             <h1 class="display-6 center">Contact me</h1>
             <form name="contact-form" class="contact-form" id="contact-form">
                 <label for="user_name">Name</label>

@@ -3,11 +3,14 @@
   grid-template-columns: 20% 40% 10% 10% 10% 10%;
   width: 1000px;
   margin: auto;
+  margin-top: 0;
 }
 
 .nav-header {
   margin: auto;
   margin-left: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 1px;
 }
 
 .nav-link {
@@ -134,11 +137,18 @@
   position: relative;
   display: grid;
   grid-template-rows: auto;
+  border: 2px solid transparent;
+  border-radius: 10px;
   padding: 10px 10px 10px 10px;
   margin: auto;
   margin-top: 100px;
   margin-bottom: 100px;
   width: 600px;
+  transition: all 1s ease-in-out;
+}
+
+.contactme-animation {
+  border: 2px solid black;
 }
 
 .contact-form {

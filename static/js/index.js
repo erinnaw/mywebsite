@@ -2,6 +2,8 @@
 
 let flash_msg_flag = false;
 let message_handler;
+let contactme_flag = false;
+let contact_handler;
 
 const sanitizeHTML = function (str) {
     return str.replace(/[^\w. ]/gi, function (c) {
@@ -45,10 +47,95 @@ $('#email').on("mouseover", () => {
     $('#email').removeClass('icon-img-animation');
 })
 .on("click", () => {
-    if (window.open('', '_blank')) {
+    let element = document.getElementById("content-contactme");
+
+    element.scrollIntoView();
+    element.scrollIntoView(false);
+    element.scrollIntoView({block: "end"});
+    element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+
+    window.setTimeout(function(){ $('#content-contactme').addClass("contactme-animation"); }, 500);
+
+    if (contactme_flag) {
+        clearTimeout(contact_handler);
+        contact_handler = window.setTimeout(function(){ $('#content-contactme').removeClass("contactme-animation"); }, 2000);
+        contactme_flag = false;
     }
     else {
-        alert("Your popup blocker has prevented the website from loading.");
+        contact_handler = window.setTimeout(function(){ $('#content-contactme').removeClass("contactme-animation"); }, 2000);
+        contactme_flag = true;
+    }   
+});
+
+$('#home').on("mouseover", () => {
+    //$('#home').addClass('icon-img-animation');
+})
+.on("mouseout", () => {
+    //('#home').removeClass('icon-img-animation');
+})
+.on("click", () => {
+    let element = document.getElementById("content-profile");
+
+    element.scrollIntoView();
+    element.scrollIntoView(false);
+    element.scrollIntoView({block: "end"});
+    element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+});
+
+$('#resume').on("mouseover", () => {
+    //$('#resume').addClass('icon-img-animation');
+})
+.on("mouseout", () => {
+    //('#resume').removeClass('icon-img-animation');
+})
+.on("click", () => {
+    let element = document.getElementById("content-resume");
+
+    element.scrollIntoView();
+    element.scrollIntoView(false);
+    element.scrollIntoView({block: "end"});
+    element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+});
+
+$('#portfolio').on("mouseover", () => {
+    //$('#portfolio').addClass('icon-img-animation');
+})
+.on("mouseout", () => {
+    //('#portfolio').removeClass('icon-img-animation');
+})
+.on("click", () => {
+    let element = document.getElementById("content-portfolio");
+
+    element.scrollIntoView();
+    element.scrollIntoView(false);
+    element.scrollIntoView({block: "end"});
+    element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+});
+
+$('#contact').on("mouseover", () => {
+    //$('#contact').addClass('icon-img-animation');
+})
+.on("mouseout", () => {
+    //('#contact').removeClass('icon-img-animation');
+})
+.on("click", () => {
+    let element = document.getElementById("content-contactme");
+
+    element.scrollIntoView();
+    element.scrollIntoView(false);
+    element.scrollIntoView({block: "end"});
+    element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+
+    window.setTimeout(function(){ $('#content-contactme').addClass("contactme-animation"); }, 500);
+
+    if (contactme_flag) {
+        clearTimeout(contact_handler);
+        contact_handler = window.setTimeout(function(){ $('#content-contactme').removeClass("contactme-animation"); }, 2000);
+        contactme_flag = false;
+    }
+    else {
+        contact_handler = window.setTimeout(function(){ $('#content-contactme').removeClass("contactme-animation"); }, 2000);
+        contactme_flag = true;
     }    
 });
 
