@@ -1,9 +1,10 @@
+body {
+  overflow-x: hidden;
+}
+
 .navbar-cols {
   display: grid;
   grid-template-columns: 20% 40% 10% 10% 10% 10%;
-  width: 1000px;
-  margin: auto;
-  margin-top: 0;
 }
 
 .nav-header {
@@ -25,8 +26,6 @@
 .content-container-cols {
   display: grid;
   grid-template-columns: 50% 50%;
-  width: 1000px;
-  margin: auto;
 }
 
 .content-header {
@@ -38,7 +37,6 @@
 .header-cols {
   display: grid;
   grid-template-columns: 50% 50%;
-  width: 1000px;
 }
 
 .grid-cols {
@@ -82,15 +80,14 @@
 .bg-resume {
   background-color: rgb(249, 248, 255);
   margin-top: 100px;
+  width: 100%;
 }
 
 .education-rows {
   display: grid;
   grid-template-rows: auto;
-  margin: auto;
   margin-top: 100px;
   margin-bottom: 100px;
-  width: 1000px;
 }
 
 .education-cols {
@@ -122,11 +119,11 @@
   margin: auto;
   margin-top: 100px;
   margin-bottom: 100px;
-  width: 1000px;
 }
 
 .bg-contactme {
   background-color: rgb(249, 248, 255);
+  width: 100%;
 }
 
 .center {
@@ -143,8 +140,13 @@
   margin: auto;
   margin-top: 100px;
   margin-bottom: 100px;
-  width: 600px;
   transition: all 1s ease-in-out;
+}
+
+.contact-width {
+  position: relative;
+  width: 50%;
+  margin: auto;
 }
 
 .contactme-animation {
@@ -178,7 +180,6 @@ textarea {
   position: relative;
   display: grid;
   grid-template-columns: 25% 65% 10%;
-  width: 1000px;
   margin: auto;
   margin-top: 50px;
 }
